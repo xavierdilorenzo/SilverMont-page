@@ -1,131 +1,132 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SilverMont</title>
-  <link rel="stylesheet" href="./styles.css">
-  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-  <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+  <title>Productos-silvermont</title>
+  <style>
+    body {
+      background-color: #f0f0f0; /* Fondo gris para toda la página */
+      margin: 0;
+      padding: 0;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .upper-content {
+      padding: 20px;
+      margin: 10px;
+      background-color: white; /* Fondo blanco para el contenido superior */
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+      font-size: 0.55cm;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row; /* Cambiamos a fila para mantener las cajas al lado una de la otra */
+      flex-wrap: wrap; /* En caso de que el ancho de la página no sea suficiente para mostrar ambas cajas, permitimos que se ajusten a varias filas */
+    }
+
+    .box {
+      padding: 20px;
+      margin: 10px;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      flex: 1;
+      padding-right: 8cm;
+    }
+
+    .red-box {
+      background-color: rgb(255, 179, 0);
+      color: rgb(2, 1, 1);
+      font-size: 0.55cm;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .blue-box {
+      background-color: rgb(0, 0, 0);
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      font-size: 0.55cm;
+    }
+
+    /* Estilos específicos para el contenido de los divs */
+    .content {
+      text-align: left;
+      line-height: 1.5;
+      padding: 10px;
+    }
+
+    .content h2 {
+      margin-top: 0;
+    }
+
+    /* Estilos para las listas dentro de las cajas */
+    .box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .box li {
+      white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+      
+    }
+    @media screen and (min-width: 320px) and (max-width: 1024px){
+    .box {
+      padding: 20px;
+      padding-right: 4cm;
+      margin: 10px;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      flex: 1;
+      max-width: 50cm; /* Ancho máximo para que las cajas no sean demasiado grandes en modo celular */
+    }
+      
+    }
+  </style>
 </head>
 <body>
-  <div class="header">
-    <nav>
-      <div class="navbar">
-        <div class="navbar-container container">
-            <ul class="menu-items">
-                <li><a href="#about">About</a></li>
-                <li><a href="#testimonials">Productos</a></li>
-            </ul>
-            <h1 class="logo"><img src="img/logo.png" alt=""></h1>
+  <div class="main-container">
+    <div class="upper-content">
+      <h1>Paquetes:</h1>
+      <div class="content">
+        <p>Ofrecemos dos modalidades de trabajo: iguala y proyectos únicos. La iguala brinda seguimiento continuo y servicios mensuales adaptados a las necesidades del cliente. Los proyectos son trabajos específicos y económicos, ideales para necesidades puntuales. En Silver Mount, nos adaptamos a ti.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="box red-box">
+        <h2 style="font-size: 0.55cm;">Proyecto:</h2>
+        <div class="content">
+          <ul>
+            <li>Trabajos específicos</li>
+            <li>Edición</li>
+            <li>Video</li>
+            <li>Fotografía</li>
+            <li>Pago por evento</li>
+          </ul>
         </div>
-    </nav>
+      </div>
+      <div class="box blue-box">
+        <h2 style="font-size: 0.55cm;">Iguala:</h2>
+        <div class="content">
+          <ul>
+            <li>Servicio Mensual</li>
+            <li>Ofrecemos herramientas</li>
+            <li>Mejor precio</li>
+            <li>Optimización de Campañas</li>
+            <li>Planes de 90 Días en adelante</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <a href="https://api.whatsapp.com/send?phone=3513691398" class="btn-wsp" target="_blank">
-    <i class="fa fa-whatsapp icono"></i>
-  </a>
-
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/img.jpg);">
-    <section id="hero">
-      <div class="hero-content"><h1>SilverMont</h1>
-        <h2>Producciones Audiovisuales</h2>
-        <p>Somos un pyme que hace producciones audiovisuales para empresas, además de campañas publicitarias en redes sociales.</p>
-        <p><strong>SOBRE TODO AMAMOS LOS DRONES</strong></p>
-        <p>El mayor atractivo para nuestros clientes son las tomas aéreas, nos buscan empresas industriales, inmobiliarias y negocios en general que necesitan darle otra perspectiva a sus proyectos.</p>
-      </div>
-    </div>
-    </section>
-    <div class="gallery">
-      <div class="image-container">
-        <img src="https://fachadascasas.com/wp-content/uploads/2021/06/Casa-moderna-minimalista-soyarquitectura-1-1.jpg" alt="Image 1" class="image">
-        <div class="overlay">
-          <div class="text">Texto de la imagen 1</div>
-          <button class="button">Botón</button>
-        </div>
-      </div>
-      
-      <div class="image-container">
-        <img src="https://fachadascasas.com/wp-content/uploads/2021/06/Casa-moderna-minimalista-soyarquitectura-1-1.jpg" alt="Image 2" class="image">
-        <div class="overlay">
-          <div class="text">Texto de la imagen 2</div>
-          <button class="button">Botón</button>
-        </div>
-      </div>
-  
-      <div class="image-container">
-        <img src="https://fachadascasas.com/wp-content/uploads/2021/06/Casa-moderna-minimalista-soyarquitectura-1-1.jpg" alt="Image 3" class="image">
-        <div class="overlay">
-          <div class="text">Texto de la imagen 2</div>
-          <button class="button">Botón</button>
-        </div>
-      </div>
-  
-      <div class="image-container">
-        <img src="https://fachadascasas.com/wp-content/uploads/2021/06/Casa-moderna-minimalista-soyarquitectura-1-1.jpg" alt="Image 4" class="image">
-        <div class="overlay">
-          <div class="text">Texto de la imagen 2</div>
-          <button class="button">Botón</button>
-        </div>
-      </div>
-
-      <div class="image-container">
-        <img src="https://fachadascasas.com/wp-content/uploads/2021/06/Casa-moderna-minimalista-soyarquitectura-1-1.jpg" alt="Image 3" class="image">
-        <div class="overlay">
-          <div class="text">Texto de la imagen 2</div>
-          <button class="button">Botón</button>
-        </div>
-      </div>
-  
-      <div class="image-container">
-        <img src="https://fachadascasas.com/wp-content/uploads/2021/06/Casa-moderna-minimalista-soyarquitectura-1-1.jpg" alt="Image 4" class="image">
-        <div class="overlay">
-          <div class="text">Texto de la imagen 2</div>
-          <button class="button">Botón</button>
-        </div>
-      </div>
-  
-    </div>
-    <section id="services">
-      <div class="service" id="serleft">
-        <h3>Edición Clave</h3>
-        <p>Destacamos con métodos de edición únicos, señalética en videos <br> y diversos contenidos en múltiples formatos.</p>
-      </div>
-      <div class="service" id="serrigth">
-        <h3>Marketing Destacado</h3>
-        <p>Les ayudamos a nuestros clientes a anunciar sus contenidos <br> con campañas pagadas en redes sociales.</p>
-      </div>
-    </section> 
-      <div class="clientes">
-      <h2>Algunos de nuestros clientes</h2>
-      <img src="img/constect.png" alt="">
-      <img src="img/prosehs.png" alt="">
-      <img src="img/realty.png" alt="">
-      <img src="img/strdgo.jpeg" alt="">
-    </div>
-  
-
-  <div class="footer">
-    <footer class="footer">
-     <center><ul class="social-icon">
-        <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-linkedin"></ion-icon>
-          </a></li>
-        <li class="social-icon__item"><a class="social-icon__link" href="https://www.instagram.com/silvermontmedia/" target="_blank">
-            <ion-icon name="logo-instagram"><a href=""></a></ion-icon>
-          </a></li>
-      </ul>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  </footer>
-  <center><p>&copy; 2023 SilverMont. Todos los derechos reservados.</p></center>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
