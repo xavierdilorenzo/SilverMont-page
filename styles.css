@@ -1,17 +1,15 @@
-/*landing*/
-
 .banner{
     background-repeat: no-repeat;  
     width: 100%;
       height: 100vh;
       background-size: cover;
       background-position: center;
-  
   }
   
-  /*whatsaap*/
+ /*whatsaap*/
   
-  .btn-wsp{
+.btn-wsp{
+  
     position:fixed;
     width:60px;
     height:60px;
@@ -36,7 +34,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px
   }
   
   .image-container {
@@ -92,43 +91,7 @@
   .button:hover {
     background-color: #f2d604;
   }
-  
-  /* ... (tu código CSS anterior) ... */
-  
-  @media screen and (max-width: 320px) {
-    footer.footer{
-      padding-left: 15px;
-      padding-right: 0px;
-      
-    }
-    footer.footer p {
-      padding-left: 10px;
-    }
-    .card {
-        max-width: 250px;
-        
-    }
-    span.title {
-      font-size: 20px;
-    }
-  
-    .social-icon{
-      padding-top: 1cm;
-      padding-left: 7px;
-    }
-    .menu{
-      padding-left: 5px;
-    }
-  }
-  
-  @media only screen and (min-width:320px) and (max-width:768px){
-    .btn-wsp{
-        width:63px;
-        height:63px;
-        line-height: 66px;
-    }
-  
-  }
+
   /* Estilos generales */
   body {
       font-family: Arial, sans-serif;
@@ -169,6 +132,7 @@
     opacity: 0.85;
     height: 75px;
     z-index: 12;
+    
   }
   
   .navbar-container {
@@ -231,12 +195,21 @@
   #services {
     background-color: #000000;
     padding: 50px 20px;
-    text-align: center;
+    text-align: center; 
   }
     
   .service {
     margin-bottom: 40px;
+    width: 50%;
   }
+
+#serleft{
+  float: left
+}
+
+#serrigth{
+  float: right
+}
     
   /* Estilos del contacto */
 .clientes {
@@ -250,353 +223,64 @@
     padding: 1cm;
 } 
 
+
   /* Estilos del pie de página */
-  
-  .card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    width: 350px;
-    flex-direction: column;
-    float: left;
-    
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: 600;
-    text-align: center;
-    color: #000;
-  }
-  
-  .form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .group {
-    position: relative;
-  }
-  
-  .form .group label {
-    font-size: 14px;
-    color: rgb(99, 102, 102);
-    position: absolute;
-    top: -10px;
-    left: 10px;
-    background-color: #fff;
-    transition: all .3s ease;
-  }
-  
-  .form .group input,
-  .form .group textarea {
-    padding: 15px;
-    border-radius: 5px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    width: 90%;
-    background-color: transparent;
-  }
-  
-  .form .group input:placeholder-shown+label,
-  .form .group textarea:placeholder-shown+label {
-    top: 10px;
-    background-color: transparent;
-  }
-  
-  .form .group input:focus,
-  .form .group textarea:focus {
-    border-color: #000000;
-  }
-  
-  .form .group input:focus+label,
-  .form .group textarea:focus+label {
-    top: -10px;
-    left: 10px;
-    background-color: #fff;
-    color: #000000;
-    font-weight: 600;
-    font-size: 14px;
-  }
-  
-  .form .group textarea {
-    resize: none;
-    height: 100px;
-  }
-  
-  .form button {
-    background-color: #000000;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .form button:hover {
-    background-color: #3586ff;
-  }
+.copy{
+  color: #000;
+}
   
   .footer {
     position: relative;
     width: 92.6%;
     background: #ffd700;
-    padding: 20px 50px;
+    padding:0px 50px;
     display: inline-block;
   }
-  
-  .social-icon,
-  .menu {
+  .social-icon{
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
   }
-  
-  .social-icon__item,
-  .menu__item {
+  .social-icon__item{
     list-style: none;
   }
   
   .social-icon__link {
     font-size: 2rem;
-    color: #fff;
+    color: #000000;
     margin: 0 10px;
     display: inline-block;
     transition: 0.5s;
   }
-  
   .social-icon__link:hover {
     transform: translateY(-10px);
   }
-  
-  .menu__link {
-    font-size: 1.2rem;
-    color: #fff;
-    margin: 0 10px;
-    display: inline-block;
-    transition: 0.5s;
-    text-decoration: none;
-    opacity: 0.75;
-    font-weight: 300;
-  }
-  
-  .menu__link:hover {
-    opacity: 1;
-  }
-  
   .footer p {
-    color: #ffffff;
-    margin: 15px 0 10px 0;
-    font-size: 1rem;
-    font-weight: 300;
-    padding-left: 12cm;
-  }
-  
-  .footer h1 {
-    color: #fff;
-  }
-  
-@media screen and (min-width:768px) and (max-width: 1024px) {
-    .footer {
-        padding: 20px;
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-    }
-    .footer p {
-        padding: 0;
-    }
-    .p1 {
-        padding: 0;
-        display: row;
-        flex-direction: column;
-    }
-    .card {
-        width: 100%;
-        max-width: 400px;
-    }
-    .content p{
-        font-size: 18px;
-    }
-    .navbar {
-      opacity: 0.95;
-    }
-  
-    .navbar-container {
-      display: block;
-      position: relative;
-      height: 64px;
-    }
-
-    .navbar .menu-items li {
-      margin-bottom: 1.5rem;
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
-}
-    
-  @media (max-width: 500px) {
-    html {
-      font-size: 65%;
-    }
-  
-    .navbar .menu-items li{
-        font-size: 1.6rem;
-    }
-  
-    .logo {
-      height: 1cm;
-      width: 1cm;
-      position: absolute;
-      top: 06px;
-      right: 15px;
-      font-size: 3rem;
-    }
-  
-    .navbar .menu-items li {
-      margin-bottom: 2.5rem;
-      font-size: 1.8rem;
-      font-weight: 500;
-    }
-  }
- 
-  @media only screen and (min-width:320px) and (max-width:768px){
-    .btn-wsp{
-        width:63px;
-        height:63px;
-        line-height: 66px;
-  }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .footer {
-        padding: 20px;
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-    }
-    .card {
-        width: 100%;
-        max-width: 300px;
-    }
-  }
-  
-
-
-
-  
-  /* ............/navbar/............ */
-  .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-  }
-  
-  .navbar {
-    width: 100%;
-    color: #000;
-    opacity: 0.85;
-    height: 75px;
-    z-index: 12;
-  }
-  
-  .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    height: 64px;
-    align-items: center;
-  }
-  
-  .menu-items {
-    padding-top: 0.5cm;
-    order: 2;
-    display: flex;
-  }
-  
-  .menu-items li {
-    list-style: none;
-    margin-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-  }
-  
-  .menu-items a {
-    text-decoration: none;
     color: #000000;
-    font-weight: 500;
-    transition: color 0.3s ease-in-out;
   }
-  
-  .menu-items a:hover {
-    color: #4b4b4b;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  .logo {
-    order: 1;
-    font-size: 2.3rem;
-    margin-bottom: 0.5rem;
-  }
-  
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
   .logo img{
-    height: 1.5cm;
+    height: 1cm;
+    width: 2.7cm;
   }
-  
-  @media (max-width: 412px){
-    .logo img{
-      height: .5cm;
-      padding-left: -5cm;
-    } 
+
+  .menu-items a{
+    font-size: 70%;
+    padding-right: 0px;
   }
-  
-  
-  @media (max-width: 768px) {
-    .navbar {
-      opacity: 0.95;
-    }
 
-  
-    .navbar-container {
-      display: block;
-      position: relative;
-      height: 64px;
-    }
+  .footer p{ 
+    font-size: 60%;
+  }
 
-  
-    .navbar .menu-items {
-      padding-top: 100px;
-      background: #dbd812;
-      height: 100vh;
-      max-width: 300px;
-      transform: translate(-150%);
-      display: flex;
-      flex-direction: column;
-      margin-left: -40px;
-      padding-left: 50px;
-      transition: transform 0.5s ease-in-out;
-    }
-  
-    .navbar .menu-items li {
-      margin-bottom: 1.5rem;
-      font-size: 1.3rem;
-      font-weight: 500;
-    }
-  
-    .logo {
-      height: 1cm;
-      position: absolute;
-      top: -0.5cm;
-      right: 15px;
-      font-size: 2rem;
-    }
-  
+  .social-icon__link{
+    font-size: 1rem;
+    padding: 0;
+  }
 
+  .clientes p{
+    padding-top: 4cm;
+  }
 }
-
-
-
