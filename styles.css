@@ -9,7 +9,6 @@
  /*whatsaap*/
   
 .btn-wsp{
-  
     position:fixed;
     width:60px;
     height:60px;
@@ -219,7 +218,7 @@
   }
   
 .clientes img{
-    height: 3cm;
+    height: 2.8cm;
     padding: 1cm;
 } 
 
@@ -233,7 +232,7 @@
     position: relative;
     width: 92.6%;
     background: #ffd700;
-    padding:0px 50px;
+    padding-left: 1cm;
     display: inline-block;
   }
   .social-icon{
@@ -282,5 +281,9 @@
 
   .clientes p{
     padding-top: 4cm;
+  }
+
+  .footer{
+    padding-left: 0;
   }
 }
