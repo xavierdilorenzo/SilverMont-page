@@ -1,6 +1,6 @@
 .banner{
-    background-repeat: no-repeat;  
-    width: 100%;
+      background-repeat: no-repeat;  
+      width: 100%;
       height: 100vh;
       background-size: cover;
       background-position: center;
@@ -113,26 +113,25 @@
       text-decoration: none;
     }
     
-    a:hover {
-      text-decoration: underline;
-    }
+a:hover {
+  text-decoration: underline;
+}
     
-    /* navbar */
+/* navbar */
   
-  .container {
-    max-width: 1200px;
-    width: 90%;
-    margin: auto;
-  }
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
   
-  .navbar {
-    width: 100%;
-    color: #000;
-    opacity: 0.85;
-    height: 75px;
-    z-index: 12;
-    
-  }
+.navbar {
+  width: 100%;
+  color: #000;
+  opacity: 0.85;
+  height: 75px;
+  z-index: 12;
+}
   
   .navbar-container {
     display: flex;
@@ -181,7 +180,7 @@
     background-image: url("hero-background.jpg");
     background-size: cover;
     background-position: center;
-    padding: 100px 20px;
+    padding: 20px 20px;
     text-align: center;
   }
     
@@ -218,7 +217,7 @@
   }
   
 .clientes img{
-    height: 2.8cm;
+    height: 3.2cm;
     padding: 1cm;
 } 
 
@@ -289,4 +288,9 @@
   .footer{
     padding-left: 0;
   }
+
+  .banner{
+    height: 80vh;
+  }
+
 }
