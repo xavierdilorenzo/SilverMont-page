@@ -43,19 +43,26 @@ text-decoration: underline;
     width: 6cm;
     height: 5cm;
     padding-right: 1cm;
-    
+    padding-bottom: 20px;
+}
+
+.tools {
+    background-color:#ffd700;
+    padding-top: 20px;
 }
 
 .tools p{
     color: #000;
-    font-size: 0.5cm;
-    width: 40%;
+    font-size: 0.4cm;
+    width: 40%; 
     text-align: center; 
+    padding-left: 10px;
 }
 
 .tools h1{
-    color: #000;
-    text-align: center;
+    color: #000; 
+    padding-left: 10px; 
+    text-align: center; 
 }
 
 .tools img{
@@ -120,6 +127,12 @@ text-decoration: underline;
     align-items: center;
 }
   
+
+.teaser{ 
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    background-color: #000;
+}
   
 .menu-items {
     padding-top: 0.5cm;
@@ -182,7 +195,7 @@ text-decoration: underline;
 }
   
     .banner{
-      height: 60vh;
+      height: 40vh;
     }
   
     #hero{
@@ -208,7 +221,12 @@ text-decoration: underline;
 
 .tools p{
     text-align: center;
-    width: 50%;
+    font-size: 0.5cm;
+
 }
 
-  }
+.teaser video{
+    width: 90%;
+}
+}
+
