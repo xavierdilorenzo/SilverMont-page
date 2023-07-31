@@ -1,3 +1,4 @@
+
 .banner{
       background-repeat: no-repeat;  
       width: 100%;
@@ -34,19 +35,21 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 20px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
   }
   
+  /* Ajustar el ancho de las imágenes en dispositivos móviles */
   .image-container {
     position: relative;
     margin: 10px;
-    max-width: 300px;
+    max-width: calc(50% - 20px); /* Ajustar el ancho para dos columnas en dispositivos móviles */
   }
   
   .image {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    max-width: 300px ;
   }
   
   .overlay {
@@ -70,9 +73,13 @@
   }
   
   .text {
-    color: #fff;
-    font-size: 18px;
+    color: #ffffff;
     margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
   }
   
   .button {
@@ -90,7 +97,7 @@
   .button:hover {
     background-color: #f2d604;
   }
-
+  
   /* Estilos generales */
   body {
       font-family: Arial, sans-serif;
@@ -290,10 +297,15 @@ a:hover {
   }
 
   .banner{
-    height: 45vh;
+    height: 87vh;
   }
 
   #hero{
     padding: 20px 20px;
   }
+  .gallery {
+    max-width: calc(100% - 40px); /* Ajustar el ancho para dos columnas en dispositivos móviles */
+    margin: 0 auto; /* Centrar la galería en dispositivos móviles */
+  }
+
 }
